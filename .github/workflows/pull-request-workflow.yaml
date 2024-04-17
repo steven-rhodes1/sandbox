@@ -1,4 +1,4 @@
-name: Triggered Workflow
+name: Pull Request Workflow
 
 on:
   workflow_dispatch:
