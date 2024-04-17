@@ -20,5 +20,5 @@ jobs:
       uses: actions/checkout@v4
     - name: Run a job
       run: |
-        echo "Workflow triggered by PR #${{ github.event.inputs.release_string }}"
+        echo Workflow triggered by PR ${{ github.event.inputs.release_string }}
         exit 0
