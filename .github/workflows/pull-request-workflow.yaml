@@ -3,8 +3,8 @@ name: Pull Request Workflow
 on:
   workflow_dispatch:
     inputs:
-      pr_number:
-        description: 'Pull Request Number'
+      release_string:
+        description: 'Something'
         required: true
         type: string #integer
 
@@ -15,4 +15,4 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
       - name: Run a job
-        run: echo "Workflow triggered by PR #${{ github.event.inputs.pr_number }}"
+        run: echo "Workflow triggered by PR #${{ github.event.inputs.release_string }}"
