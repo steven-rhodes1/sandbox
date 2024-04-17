@@ -7,6 +7,10 @@ on:
         description: 'Something'
         required: true
         type: string #integer
+      trigger_uuid:
+        description: uuid of trigger
+        type: string
+        required: false
 
 jobs:
   triggered_job:
